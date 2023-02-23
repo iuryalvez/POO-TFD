@@ -10,10 +10,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-// import jakarta.persistence.JoinColumn;
-// import jakarta.persistence.JoinTable;
 import jakarta.persistence.OneToMany;
-// import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 // identifica a classe como entidade para o mapeamento objeto-relacional
@@ -32,18 +29,13 @@ public class Professor {
 	// conseguimos acessar as turmas pelo professor e o professor pelas turmas
 	private List<Turma> turmas; // cada professor tem uma lista de turmas que ele pode ministrar ou já ter ministrado
 	
-	// private List<Publicacao> avaliacao; // Construtor 1
 	private float notaMedia;
-	// static int idCriado = 0;
-	
+
 	public Professor() {}
 
 	public Professor(String nome){ // construtor
-		// this.id = idCriado;
-		// idCriado++;
 		this.nome = nome;
 		this.turmas = null;
-		// this.avaliacao = null;
 		this.notaMedia = 0;
 	}
 	

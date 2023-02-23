@@ -13,7 +13,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-// import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
@@ -33,17 +32,10 @@ public class Turma {
 	@JoinColumn(name = "professor_id") // sabendo que o modelo é uma tabela, adicionamos uma nova coluna para mostrar o professor_id relacionado
 	// mostra de acordo com a chave estrangeira associada a turmas_id
     private Professor professor;
-	
+
 	private String semestre;
     
-    // private List<Publicacao> avaliacoes; // Construtor 1
-	// private List<Publicacao> publicacoes; // Construtor 2
 	private float notaMedia;
-	// private List<Publicacao> publicacoesForum; // Construtor 2
-	// static int idCriado = 0;
-	// static int numAvaliacoes = 0;
-	// static int numPublicacoes = 0;
-	// static int numPublicacoesForum = 0;
 	
 	public Turma() {}
 
@@ -51,12 +43,7 @@ public class Turma {
 		this.nome = nome;
 		this.semestre = semestre;
 		this.professor = professor;
-		// this.avaliacoes = null;
-		// this.publicacoes = null;
 		this.notaMedia = 0;
-		// this.publicacoesForum = null;
-		// this.id = idCriado;
-		// idCriado++;
 	}
 	
 	public String getNome() {
