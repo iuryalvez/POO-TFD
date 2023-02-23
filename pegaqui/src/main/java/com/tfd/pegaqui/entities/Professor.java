@@ -36,7 +36,9 @@ public class Professor {
 	private float notaMedia;
 	// static int idCriado = 0;
 	
-	Professor(String nome){ // construtor
+	public Professor() {}
+
+	public Professor(String nome){ // construtor
 		// this.id = idCriado;
 		// idCriado++;
 		this.nome = nome;

@@ -45,7 +45,9 @@ public class Turma {
 	// static int numPublicacoes = 0;
 	// static int numPublicacoesForum = 0;
 	
-	Turma(String nome, String semestre, Professor professor){
+	public Turma() {}
+
+	public Turma(String nome, String semestre, Professor professor){
 		this.nome = nome;
 		this.semestre = semestre;
 		this.professor = professor;
