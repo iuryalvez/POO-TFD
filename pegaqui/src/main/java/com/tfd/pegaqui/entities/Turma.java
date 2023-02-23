@@ -3,9 +3,6 @@
 
 package com.tfd.pegaqui.entities;
 
-// import java.io.File;
-// import java.util.List;
-
 // Escolher os imports com base na especificação para manter o projeto funcional
 // Nesse caso não importar o que há implementação 
 import jakarta.persistence.Entity;
@@ -37,7 +34,7 @@ public class Turma {
     
 	private float notaMedia;
 	
-	public Turma() {}
+	public Turma() {} // default construtor
 
 	public Turma(String nome, String semestre, Professor professor){
 		this.nome = nome;

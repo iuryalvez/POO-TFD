@@ -24,7 +24,7 @@ public class Usuario {
     @ManyToMany
     private List<Turma> turmasFavoritadas;
 	
-    public Usuario() {}
+    public Usuario() {} // default construtor
 
 	public Usuario(String nome, String senha, String email, String genero){
 		this.nome = nome;

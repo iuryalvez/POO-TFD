@@ -3,7 +3,6 @@
 
 package com.tfd.pegaqui.entities;
 
-// import java.io.File;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -31,7 +30,7 @@ public class Professor {
 	
 	private float notaMedia;
 
-	public Professor() {}
+	public Professor() {} // default construtor
 
 	public Professor(String nome){ // construtor
 		this.nome = nome;
