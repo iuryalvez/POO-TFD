@@ -10,7 +10,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
+// import jakarta.persistence.JoinColumn;
 // import jakarta.persistence.JoinTable;
 import jakarta.persistence.OneToMany;
 // import jakarta.persistence.ManyToMany;
@@ -28,9 +28,8 @@ public class Professor {
 	private String nome;
 
     // Relacionamento entre Professor e Turma
-	@OneToMany // um professor para muitas turmas
-	@JoinColumn(name = "turmas_id") // sabendo que o modelo é uma tabela, adicionamos uma nova coluna para mostrar as turmas_id relacionadas
-    // mostra de acordo com a chave estrangeira associada a turmas_id
+	@OneToMany(mappedBy = "professor") // um professor para muitas turmas, aqui criamos um modelo bidirecional
+	// conseguimos acessar as turmas pelo professor e o professor pelas turmas
 	private List<Turma> turmas; // cada professor tem uma lista de turmas que ele pode ministrar ou já ter ministrado
 	
 	// private List<Publicacao> avaliacao; // Construtor 1

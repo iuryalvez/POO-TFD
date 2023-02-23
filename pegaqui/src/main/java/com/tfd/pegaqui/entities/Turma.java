@@ -30,7 +30,7 @@ public class Turma {
 
     // Relacionamento entre Turma e Professor:
 	@ManyToOne // muitas turmas para um professor, cada professor possui muitas turmas, cada turma possui 1 professor
-	@JoinColumn(name = "professores_id") // sabendo que o modelo é uma tabela, adicionamos uma nova coluna para mostrar o professor_id relacionado
+	@JoinColumn(name = "professor_id") // sabendo que o modelo é uma tabela, adicionamos uma nova coluna para mostrar o professor_id relacionado
 	// mostra de acordo com a chave estrangeira associada a turmas_id
     private Professor professor;
 	
