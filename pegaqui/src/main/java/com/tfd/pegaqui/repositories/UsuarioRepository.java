@@ -2,12 +2,11 @@
 
 package com.tfd.pegaqui.repositories;
 
-
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.tfd.pegaqui.entities.Turma;
+import com.tfd.pegaqui.entities.Usuario;
 
-// Fazer o ProfessorRepository extender JpaRepository faz com que esta classe
+// Fazer o UsuarioRepository extender JpaRepository faz com que esta classe
 // herde todas as funções de um JpaRepository e nos permite acessar dados do banco de dados
-public interface TurmaRepository extends JpaRepository<Turma, Integer> {
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     
 }

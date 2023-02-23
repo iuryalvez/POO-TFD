@@ -13,4 +13,14 @@ INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Física
 INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Física 4', 4.4, '2022/2', 3);
 INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Fundamentos de Matemática para Computação', 5.0, '2021/2', 4);
 INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Matemática Discreta', 5.0, '2021/1', 4);
-INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Matemática Discreta', 5.0, '2020/2', 4);
+INSERT INTO tb_turmas(nome, nota_media, semestre, professor_id) VALUES ('Matemática Discreta', 5.0, '2020/2', 5);
+
+INSERT INTO tb_usuarios(nome, email, genero, senha) VALUES ('Iury', 'iury.bo@gmail.com', 'M', 'biscoito123');
+INSERT INTO tb_usuarios(nome, email, genero, senha) VALUES ('Vinicius', 'vinifcastro@gmail.com', 'M', '123vinicius');
+INSERT INTO tb_usuarios(nome, email, genero, senha) VALUES ('Pedrão', 'pedrao123@gmail.com', 'M', 'pedraobonito123');
+
+INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (1,2);
+INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (2,2);
+INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (3,4);
+
+
