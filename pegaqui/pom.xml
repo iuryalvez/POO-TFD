@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
+		<groupId>org.springframework.boot</groupId> 
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.3-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
@@ -12,20 +12,22 @@
 	<artifactId>pegaqui</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pegaqui</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project of OOP for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!-- dependência do banco de dados relacional -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- dependência web, TOMCAT gera um container web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!-- dependência de banco de dados em memória para utilizar durante o desenvolvimento (testes) -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -40,9 +42,16 @@
 
 	<build>
 		<plugins>
+			<!-- gerenciador de dependências MAVEN (baixa da internet as dependências utilizadas) -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- plugin para não dar possíveis erros -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
 			</plugin>
 		</plugins>
 	</build>
