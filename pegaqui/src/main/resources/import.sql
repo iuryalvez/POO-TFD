@@ -22,5 +22,3 @@ INSERT INTO tb_usuarios(nome, email, genero, senha) VALUES ('Pedrão', 'pedrao12
 INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (1,2);
 INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (2,2);
 INSERT INTO tb_usuarios_turmas_favoritadas(usuario_id, turmas_favoritadas_id) VALUES (3,4);
-
-

@@ -49,5 +49,5 @@ public class ProfessorController {
         // save retorna uma nova referência para o objeto salvo
         return resultado;
     }
-
+    
 }
