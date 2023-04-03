@@ -1,2 +1,7 @@
-# Projeto-pegaqui
-Repositório para implementação do projeto final da disciplina de Programação Orientada à Objetos
+# Projeto pegaqui/pesqui
+Repositório para implementação do projeto final da disciplina de **Programação Orientada à Objetos** e **Interação Humano-Computador**. <br>
+### Introdução 
+Pegaqui/Pesqui idealizada para uma plataforma com interface web e móvel que tem o intuito de conectar a comunidade acadêmica da UFG a fim de facilitar o processo de formação dos estudantes através do compartilhamento de materiais (provas, listas, atividades) disponibilizados pelos veteranos de curso durante os períodos letivos anteriores, fornecimento de um fórum para pedir ajuda e auxiliar outros, além de também contar com os feedbacks desses alunos sobre professores e disciplinas da instituição. <br>
+### Desenvolvimento
+A catalogação das informações que foram implementadas no projeto foi feito através de um **[guia de estilo](https://docs.google.com/document/d/1f17yWVY4yBBy8gWkS1x3zKCEl_MSUnBgh_ynnb_W-jA/edit?usp=sharing) no Google Docs** e sua **[prototipação](https://www.figma.com/file/BLYq35lhgpdFYuzlEt0iO8/Prototipagem?node-id=0%3A1&t=pPJiNH8vxwZ49zY1-1) no Figma**, basta clicar nos dois links para visualizá-los se desejar. Tanto o guia de estilo quando a prototipação são tópicos muito importantes na criação de projetos e foram incentivados principalmente pela disciplina de Interação Humano-Computador. <br>
+A princípio o código do projeto seria implementado utilizando **Java e o framework SpringBoot** (desenvolvimento web).
